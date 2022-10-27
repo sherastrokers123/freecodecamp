@@ -9,38 +9,41 @@
 </head>
 
 <body>
-    <h2>CatPhotoApp</h2>
-    <main>
-        <p>Click here to view more <a href="#">cat photos</a>.</p>
+    <style>
+        .injected-text {
+            margin-bottom: -25px;
+            text-align: center;
+        }
 
-        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-                alt="A cute orange cat lying on its back."></a>
+        .box {
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            text-align: center;
+        }
 
-        <div>
-            <p>Things cats love:</p>
-            <ul>
-                <li>cat nip</li>
-                <li>laser pointers</li>
-                <li>lasagna</li>
-            </ul>
-            <p>Top 3 things cats hate:</p>
-            <ol>
-                <li>flea treatment</li>
-                <li>thunder</li>
-                <li>other cats</li>
-            </ol>
-        </div>
+        .yellow-box {
+            background-color: yellow;
+            padding: 20px 40px 20px 40px;
+        }
 
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
-            <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
-            <label><input type="checkbox" name="personality" checked> Loving</label>
-            <label><input type="checkbox" name="personality"> Lazy</label>
-            <label><input type="checkbox" name="personality"> Energetic</label><br>
-            <input type="text" placeholder="cat photo URL" required>
-            <button type="submit">Submit</button>
-        </form>
-    </main>
+        .red-box {
+            background-color: red;
+            margin: 20px 40px 20px 40px;
+            padding: 1.5em;
+        }
+
+        .green-box {
+            background-color: green;
+            margin: 20px 40px 20px 40px;
+        }
+    </style>
+    <h5 class="injected-text">margin</h5>
+
+    <div class="box yellow-box">
+        <h5 class="box red-box">padding</h5>
+        <h5 class="box green-box">padding</h5>
+    </div>
 </body>
 
 </html>
