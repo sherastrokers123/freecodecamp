@@ -10,43 +10,46 @@
 
 <body>
     <style>
-        h4 {
-            text-align: center;
+        header {
+            background-color: hsl(180, 90%, 35%);
+            color: #FFFFFF;
         }
 
-        p {
-            text-align: justify;
+        nav {
+            background-color: hsl(180, 80%, 25%);
         }
 
-        .links {
+        h1 {
+            text-indent: 10px;
+            padding-top: 10px;
+        }
+
+        nav ul {
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+        }
+
+        nav li {
+            display: inline;
             margin-right: 20px;
-
         }
 
-        .fullCard {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 10px 5px;
-            padding: 4px;
-        }
-
-        .cardContent {
-            padding: 10px;
+        a {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
-    <div class="fullCard">
-        <div class="cardContent">
-            <div class="cardText">
-                <h4>Google</h4>
-                <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford
-                    University.</p>
-            </div>
-            <div class="cardLinks">
-                <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
-                <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
-            </div>
-        </div>
-    </div>
+
+    <header>
+        <h1>Cooking with FCC!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 
 </html>

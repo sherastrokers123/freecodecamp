@@ -10,43 +10,41 @@
 
 <body>
     <style>
-        h4 {
-            text-align: center;
+        .balls {
+            border-radius: 50%;
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
 
-        p {
-            text-align: justify;
+        #red {
+            background: red;
+            left: 27%;
+            animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
         }
 
-        .links {
-            margin-right: 20px;
-
+        #blue {
+            background: blue;
+            left: 56%;
+            animation-timing-function: ease-out;
         }
 
-        .fullCard {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 10px 5px;
-            padding: 4px;
-        }
+        @keyframes bounce {
+            0% {
+                top: 0px;
+            }
 
-        .cardContent {
-            padding: 10px;
+            100% {
+                top: 249px;
+            }
         }
     </style>
-    <div class="fullCard">
-        <div class="cardContent">
-            <div class="cardText">
-                <h4>Google</h4>
-                <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford
-                    University.</p>
-            </div>
-            <div class="cardLinks">
-                <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
-                <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
-            </div>
-        </div>
-    </div>
+    <div class="balls" id="red"></div>
+    <div class="balls" id="blue"></div>
 </body>
 
 </html>
