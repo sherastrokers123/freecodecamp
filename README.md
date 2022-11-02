@@ -1,6 +1,6 @@
 # **FREECODECAPM.**
 
-## DEVELOPER:CESSABIT
+## DEVELOPER: CESSABIT
 
 ## Прохождения заданий на freecodecamp
 ___
